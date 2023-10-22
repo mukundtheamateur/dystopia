@@ -1,0 +1,21 @@
+version: 2.1  # Use version 2.1 of the CircleCI configuration
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14  # Use a Node.js 14 Docker image
+    steps:
+      - checkout  # Check out the code from your repository
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Tests
+          command: npm test
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+
