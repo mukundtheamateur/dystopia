@@ -1,0 +1,57 @@
+Folder PATH listing for volume DATA
+Volume serial number is 181E-BA14
+E:.
++---.github
+|   \---workflows
++---.vscode
++---api
+|   \---src
+|       +---common
+|       +---config
+|       +---controllers
+|       +---middlewares
+|       +---models
+|       \---routes
++---backend
+|   +---public
+|   \---src
+|       +---assets
+|       |   +---css
+|       |   \---img
+|       +---common
+|       +---components
+|       +---config
+|       +---lang
+|       +---pages
+|       \---services
++---frontend
+|   +---public
+|   \---src
+|       +---assets
+|       |   +---css
+|       |   \---img
+|       +---common
+|       +---components
+|       +---config
+|       +---lang
+|       +---pages
+|       \---services
++---mobile
+|   +---assets
+|   +---common
+|   +---components
+|   |   \---AutocompleteDropdown
+|   |       \---HOC
+|   +---config
+|   +---lang
+|   +---miscellaneous
+|   +---plugins
+|   +---screens
+|   +---services
+|   \---types
++---packages
+|   +---bookcars-helper
+|   +---bookcars-types
+|   \---disable-react-devtools
++---__scripts
+\---__services
