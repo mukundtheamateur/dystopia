@@ -1,21 +1,84 @@
-version: 2.1  # Use version 2.1 of the CircleCI configuration
+version: 2.1
+
+executors:
+  default-executor:
+    docker:
+      - image: circleci/node:14  # Use the Node.js version you need
 
 jobs:
   build:
-    docker:
-      - image: circleci/node:14  # Use a Node.js 14 Docker image
+    executor: default-executor
     steps:
-      - checkout  # Check out the code from your repository
+      - checkout  # Checkout the code from the repository
+
+      - setup_remote_docker:  # Set up Docker inside the executor
+          version: 20.10.7
+
       - run:
-          name: Install Dependencies
-          command: npm install
+          name: Build and push API service
+          command: |
+            docker build -t my-api-service ./api
+            docker tag my-api-service:latest your-docker-registry/my-api-service:latest
+            docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+            docker push your-docker-registry/my-api-service:latest
+
       - run:
-          name: Run Tests
-          command: npm test
+          name: Build and push Backend service
+          command: |
+            docker build -t my-backend-service ./backend
+            docker tag my-backend-service:latest your-docker-registry/my-backend-service:latest
+            docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+            docker push your-docker-registry/my-backend-service:latest
+
+      - run:
+          name: Build and push Frontend service
+          command: |
+            docker build -t my-frontend-service ./frontend
+            docker tag my-frontend-service:latest your-docker-registry/my-frontend-service:latest
+            docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+            docker push your-docker-registry/my-frontend-service:latest
+
+  deploy:
+    executor: default-executor
+    steps:
+      - setup_remote_docker:  # Set up Docker inside the executor
+          version: 20.10.7
+
+      - run:
+          name: Deploy API service
+          command: |
+            docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+            docker pull your-docker-registry/my-api-service:latest
+            # Perform any deployment steps here
+
+      - run:
+          name: Deploy Backend service
+          command: |
+            docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+            docker pull your-docker-registry/my-backend-service:latest
+            # Perform any deployment steps here
+
+      - run:
+          name: Deploy Frontend service
+          command: |
+            docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+            docker pull your-docker-registry/my-frontend-service:latest
+            # Perform any deployment steps here
 
 workflows:
   version: 2
-  build:
+  build-and-deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only:
+                - main  # Adjust this to the branch you want to trigger the build
 
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - main  # Adjust this to the branch you want to trigger the deployment
