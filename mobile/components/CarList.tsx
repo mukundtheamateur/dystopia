@@ -163,7 +163,7 @@ function CarList({
           ListHeaderComponent={header}
           ListFooterComponent={
             fetch
-              ? <ActivityIndicator size="large" color="#f37022" style={styles.indicator} />
+              ? <ActivityIndicator size="large" color="#AE8625" style={styles.indicator} />
               : <></>
 }
           ListEmptyComponent={

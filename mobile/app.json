@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "assetBundlePatterns": ["**/*"],
     "splash": {
-      "backgroundColor": "#f37022",
+      "backgroundColor": "#AE8625",
       "image": "./assets/splash.png"
     },
     "android": {
@@ -17,7 +17,7 @@
       },
       "icon": "./assets/icon.png",
       "splash": {
-        "backgroundColor": "#f37022",
+        "backgroundColor": "#AE8625",
         "image": "./assets/splash.png"
       },
       "googleServicesFile": "./google-services.json",
@@ -28,7 +28,7 @@
       "supportsTablet": true,
       "icon": "./assets/icon.png",
       "splash": {
-        "backgroundColor": "#f37022",
+        "backgroundColor": "#AE8625",
         "image": "./assets/splash.png",
         "tabletImage": "./assets/splash-tablet.png"
       },

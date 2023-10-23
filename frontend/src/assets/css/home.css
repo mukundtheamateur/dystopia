@@ -54,7 +54,7 @@ div.home footer div.copyright span.part2 {
   div.home div.home-content span.home-logo-main,
   div.home div.home-content span.home-logo-registered {
     float: left;
-    color: #f37022;
+    color: #AE8625;
     opacity: 0.97;
   }
 
@@ -65,7 +65,7 @@ div.home footer div.copyright span.part2 {
   }
 
   div.home div.home-content span.home-logo-main:after {
-    content: 'BookCars';
+    content: 'RCLR';
   }
 
   div.home div.home-content span.home-logo-registered {
@@ -106,7 +106,7 @@ div.home footer div.copyright span.part2 {
     border-radius: 5px;
     height: 52px;
     white-space: nowrap;
-    background: #f37022;
+    background: #AE8625;
     color: #fff;
     margin: 10px;
   }
@@ -170,7 +170,7 @@ div.home footer div.copyright span.part2 {
   div.home div.home-content span.home-logo-main,
   div.home div.home-content span.home-logo-registered {
     float: left;
-    color: #f37022;
+    color: #AE8625;
     opacity: 0.97;
   }
 
@@ -181,7 +181,7 @@ div.home footer div.copyright span.part2 {
   }
 
   div.home div.home-content span.home-logo-main:after {
-    content: 'BookCars';
+    content: 'RCLR';
   }
 
   div.home div.home-content span.home-logo-registered {
@@ -235,7 +235,7 @@ div.home footer div.copyright span.part2 {
     min-width: 100%;
     margin: 0;
     white-space: nowrap;
-    background: #f37022;
+    background: #AE8625;
     padding: 5px 32px;
     margin-left: 2px;
   }

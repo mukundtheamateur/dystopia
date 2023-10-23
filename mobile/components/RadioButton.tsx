@@ -23,7 +23,7 @@ function RadioButton({
 
   return (
     <View style={{ ...styles.container, ...style }}>
-      <MaterialIcons name={checked ? 'radio-button-on' : 'radio-button-off'} size={18} color="#f37022" onPress={onPress} />
+      <MaterialIcons name={checked ? 'radio-button-on' : 'radio-button-off'} size={18} color="#AE8625" onPress={onPress} />
       <Pressable style={styles.pressable} onPress={onPress}>
         <Text style={{ ...styles.text, ...textStyle }}>{label}</Text>
       </Pressable>

@@ -26,7 +26,7 @@ function Button({
     button: {
       height: small ? 37 : 55,
       borderRadius: 10,
-      backgroundColor: color === 'secondary' ? '#999' : '#f37022',
+      backgroundColor: color === 'secondary' ? '#999' : '#AE8625',
       alignItems: 'center',
       justifyContent: 'center',
       maxWidth: 480,

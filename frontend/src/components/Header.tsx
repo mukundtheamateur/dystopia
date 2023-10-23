@@ -285,7 +285,7 @@ function Header({
   return (
     (!hidden && (
       <div style={classes.grow} className="header">
-        <AppBar position="fixed" sx={{ bgcolor: '#f37022' }}>
+        <AppBar position="fixed" sx={{ bgcolor: '#AE8625' }}>
           <Toolbar className="toolbar">
             {isLoaded && !loading && (
               <IconButton edge="start" sx={classes.menuButton} color="inherit" aria-label="open drawer" onClick={handleSideMenuOpen}>

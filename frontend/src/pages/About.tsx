@@ -8,7 +8,7 @@ function About() {
 
   return (
     <Master onLoad={onLoad} strict={false}>
-      About!
+      Yo man !
     </Master>
   )
 }

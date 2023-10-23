@@ -109,11 +109,11 @@ const theme = createTheme(
         styleOverrides: {
           root: {
             '& .Mui-checked': {
-              color: '#f37022 !important',
+              color: '#AE8625 !important',
             },
             '& .Mui-checked+.MuiSwitch-track': {
               opacity: 0.7,
-              backgroundColor: '#f37022 !important',
+              backgroundColor: '#AE8625 !important',
             },
           },
         },

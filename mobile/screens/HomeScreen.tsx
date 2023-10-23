@@ -325,13 +325,13 @@ const styles = StyleSheet.create({
     maxWidth: 480,
   },
   logoMain: {
-    color: '#f37022',
+    color: '#AE8625',
     fontSize: 70,
     fontWeight: '700',
     lineHeight: 125,
   },
   logoRegistered: {
-    color: '#f37022',
+    color: '#AE8625',
     fontSize: 15,
     fontWeight: '600',
     marginTop: 40,
