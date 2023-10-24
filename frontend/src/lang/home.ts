@@ -1,7 +1,7 @@
 import LocalizedStrings from 'react-localization'
 import * as LangHelper from '../common/LangHelper'
 
-const COPYRIGHT_PART1 = `Copyright © ${new Date().getFullYear()} BookCars.ma`
+const COPYRIGHT_PART1 = `Copyright © ${new Date().getFullYear()} RCLR.in`
 
 const strings = new LocalizedStrings({
   fr: {

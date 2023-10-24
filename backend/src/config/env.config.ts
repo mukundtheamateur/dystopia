@@ -13,8 +13,7 @@ const LANGUAGES = [
   {
     code: 'en',
     label: 'English',
-  },
-  
+  }
 ]
 
 const Env = {
