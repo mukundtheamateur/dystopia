@@ -167,7 +167,7 @@ function BookingList({
         ListHeaderComponent={header}
         ListFooterComponent={
           fetch && !openCancelDialog
-            ? <ActivityIndicator size="large" color="#f37022" style={styles.indicator} />
+            ? <ActivityIndicator size="large" color="#AE8625" style={styles.indicator} />
             : <></>
         }
         ListEmptyComponent={
@@ -186,7 +186,7 @@ function BookingList({
           <Dialog.Title style={styles.dialogTitleContent}>{(!cancelRequestSent && !cancelRequestProcessing && i18n.t('CONFIRM_TITLE')) || ''}</Dialog.Title>
           <Dialog.Content style={styles.dialogContent}>
             {cancelRequestProcessing ? (
-              <ActivityIndicator size="large" color="#f37022" />
+              <ActivityIndicator size="large" color="#AE8625" />
             ) : cancelRequestSent ? (
               <Paragraph>{i18n.t('CANCEL_BOOKING_REQUEST_SENT')}</Paragraph>
             ) : (
@@ -196,7 +196,7 @@ function BookingList({
           <Dialog.Actions style={styles.dialogActions}>
             {!cancelRequestProcessing && (
               <NativeButton
-                // color='#f37022'
+                // color='#AE8625'
                 onPress={() => {
                   setOpenCancelDialog(false)
                   if (cancelRequestSent) {
@@ -211,7 +211,7 @@ function BookingList({
             )}
             {!cancelRequestSent && !cancelRequestProcessing && (
               <NativeButton
-                // color='#f37022'
+                // color='#AE8625'
                 onPress={async () => {
                   try {
                     const row = rows.find((r) => r._id === selectedId)

@@ -146,7 +146,7 @@ function DrawerNavigator() {
         initialRouteName="Home"
         backBehavior="history"
         screenOptions={{
-          drawerActiveTintColor: '#f37022',
+          drawerActiveTintColor: '#AE8625',
         }}
         drawerContent={(props) => (
           <DrawerContent
@@ -155,7 +155,7 @@ function DrawerNavigator() {
             loggedIn={loggedIn}
             language={language}
             activeBackgroundColor="#feeee4"
-            activeTintColor="#f37022"
+            activeTintColor="#AE8625"
             props={props}
           />
         )}

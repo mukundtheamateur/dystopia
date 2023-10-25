@@ -367,7 +367,7 @@ function SettingsScreen({ navigation, route }: NativeStackScreenProps<StackParam
               </Dialog.Content>
               <Dialog.Actions style={styles.dialogActions}>
                 <NativeButton
-                  // color='#f37022'
+                  // color='#AE8625'
                   onPress={() => {
                     setOpenDeleteDialog(false)
                   }}
@@ -375,7 +375,7 @@ function SettingsScreen({ navigation, route }: NativeStackScreenProps<StackParam
                   {i18n.t('CANCEL')}
                 </NativeButton>
                 <NativeButton
-                  // color='#f37022'
+                  // color='#AE8625'
                   onPress={async () => {
                     try {
                       if (user?._id) {

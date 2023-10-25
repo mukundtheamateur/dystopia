@@ -233,7 +233,7 @@ function NotificationsScreen({ navigation, route }: NativeStackScreenProps<Stack
                 </View>
               </View>
               <ScrollView ref={notificationsListRef} contentContainerStyle={styles.list} keyboardShouldPersistTaps="handled" nestedScrollEnabled>
-                {loading && <ActivityIndicator size="large" color="#f37022" />}
+                {loading && <ActivityIndicator size="large" color="#AE8625" />}
                 {rows.map((row) => (
                   <View key={row._id} style={styles.notificationContainer}>
                     <View style={styles.notificationCheckbox}>
@@ -390,7 +390,7 @@ function NotificationsScreen({ navigation, route }: NativeStackScreenProps<Stack
                   </Dialog.Content>
                   <Dialog.Actions style={styles.dialogActions}>
                     <NativeButton
-                      // color='#f37022'
+                      // color='#AE8625'
                       onPress={() => {
                         setOpenDeleteDialog(false)
                       }}
@@ -398,7 +398,7 @@ function NotificationsScreen({ navigation, route }: NativeStackScreenProps<Stack
                       {i18n.t('CANCEL')}
                     </NativeButton>
                     <NativeButton
-                      // color='#f37022'
+                      // color='#AE8625'
                       onPress={async () => {
                         try {
                           if (user?._id) {

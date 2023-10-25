@@ -1,7 +1,7 @@
 div.booking .booking-form-title {
   text-align: center;
   text-transform: capitalize;
-  color: #f37022;
+  color: #AE8625;
   margin-bottom: 30px;
 }
 
@@ -218,7 +218,7 @@ div.booking .btn-cancel {
 }
 
 div.booking .btn-book {
-  background: #f37022;
+  background: #AE8625;
 }
 
 div.booking .btn-cancel {

@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#feeee4',
   },
   languageMenuSelectedText: {
-    color: '#f37022',
+    color: '#AE8625',
     fontWeight: '600',
     marginLeft: 25,
   },

@@ -34,7 +34,7 @@ try {
 }
 
 const app: Express = express()
-
+// used helmet functions for security reasons
 app.use(helmet.contentSecurityPolicy())
 app.use(helmet.dnsPrefetchControl())
 app.use(helmet.crossOriginEmbedderPolicy())

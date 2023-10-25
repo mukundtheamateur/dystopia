@@ -78,7 +78,7 @@ function Header({ title,
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#f37022',
+    backgroundColor: '#AE8625',
     elevation: 5,
     height: 50,
     display: 'flex',

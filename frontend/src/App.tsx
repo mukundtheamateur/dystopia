@@ -7,6 +7,7 @@ const Activate = lazy(() => import('./pages/Activate'))
 const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
 const ResetPassword = lazy(() => import('./pages/ResetPassword'))
 const Home = lazy(() => import('./pages/Home'))
+const Hero = lazy(() => import('./pages/Hero'))
 const Cars = lazy(() => import('./pages/Cars'))
 const Checkout = lazy(() => import('./pages/Checkout'))
 const Bookings = lazy(() => import('./pages/Bookings'))
@@ -30,7 +31,8 @@ function App() {
             <Route path="/activate" element={<Activate />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Hero />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/cars" element={<Cars />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/bookings" element={<Bookings />} />
